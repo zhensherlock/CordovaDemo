@@ -1,0 +1,55 @@
+﻿<div class="page" style="padding:0 15px;">
+    <div class="hd">
+        <h1 class="page_title">手机通讯录</h1>
+    </div>
+    <div class="bd">
+        <div class="weui_cells">
+            <a href="javascript:;" id="btn_create_contact" class="weui_btn weui_btn_primary">创建联系人</a>
+        </div>
+        <div class="weui_cells weui_cells_split" id="contact_list">
+        </div>
+    </div>
+    <div class="weui_dialog_confirm" id="dialog_create_contact" style="display:none">
+        <div class="weui_mask"></div>
+        <div class="weui_dialog">
+            <div class="weui_dialog_hd"><strong class="weui_dialog_title">创建联系人</strong></div>
+            <div class="weui_dialog_bd">
+                <div class="weui_cells weui_cells_form">
+                    <div class="weui_cell">
+                        <div class="weui_cell_hd"><label class="weui_label">联系人</label></div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input class="weui_input" type="text" id="txt_contact_name" placeholder="请输入联系人" />
+                        </div>
+                    </div>
+                    <div class="weui_cell">
+                        <div class="weui_cell_hd"><label class="weui_label">性别</label></div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <select class="weui_select" id="select_contactgender">
+                                <option value="男">男</option>
+                                <option value="女">女</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="weui_dialog_ft">
+                <a href="javascript:;" class="weui_btn_dialog default" onclick="ms_contacts.hideCreateContact()">取消</a>
+                <a href="javascript:;" class="weui_btn_dialog primary" onclick="ms_contacts.saveContact()">确定</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script id="contact_template" type="text/x-handlebars-template">
+    {{#each list}}
+    <div class="weui_cell">
+        <div class="weui_cell_bd weui_cell_primary">
+            <p>{{displayName}}</p>
+        </div>
+        <div class="weui_cell_ft">
+            {{#each phoneNumbers}}
+                {{value}}
+            {{/each}}
+        </div>
+    </div>
+    {{/each}}
+</script>

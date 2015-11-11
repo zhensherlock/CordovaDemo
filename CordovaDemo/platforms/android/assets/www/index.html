@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <title>CordovaDemo</title>
+
+    <!-- BlankCordovaApp1 引用 -->
+    <link href="css/weui.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+    <!--<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=ih7m1nBfLC8UurZ7rnGuP3sa"></script>-->
+</head>
+<body>
+    <div class="container js_container">
+        <div class="page">
+            <div class="hd">
+                <h1 class="page_title">Cordova</h1>
+                <p class="page_desc">Demo</p>
+            </div>
+            <div class="bd">
+                <div class="weui_cells weui_cells_access global_navs">
+                    <a class="weui_cell js_cell" href="javascript:;" data-id="ms_battery">
+                        <span class="weui_cell_hd"><img src="./images/icon_nav_button.png" class="icon_nav" alt=""></span>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p>电池监控</p>
+                        </div>
+                        <div class="weui_cell_ft">
+                        </div>
+                    </a>
+                    <a class="weui_cell js_cell" href="javascript:;" data-id="ms_device">
+                        <span class="weui_cell_hd"><img src="./images/icon_nav_cell.png" class="icon_nav" alt=""></span>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p>设备信息</p>
+                        </div>
+                        <div class="weui_cell_ft">
+                        </div>
+                    </a>
+                    <a class="weui_cell js_cell" href="javascript:;" data-id="ms_camera">
+                        <span class="weui_cell_hd"><img src="./images/icon_nav_toast.png" class="icon_nav" alt=""></span>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p>照相机</p>
+                        </div>
+                        <div class="weui_cell_ft">
+                        </div>
+                    </a>
+                    <a class="weui_cell js_cell" href="javascript:;" data-id="ms_capture">
+                        <span class="weui_cell_hd"><img src="./images/icon_nav_dialog.png" class="icon_nav" alt=""></span>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p>捕捉图片、语音、视频</p>
+                        </div>
+                        <div class="weui_cell_ft">
+                        </div>
+                    </a>
+                    <a class="weui_cell js_cell" href="javascript:;" data-id="ms_contacts">
+                        <span class="weui_cell_hd"><img src="./images/icon_nav_msg.png" class="icon_nav" alt=""></span>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p>手机通讯录</p>
+                        </div>
+                        <div class="weui_cell_ft">
+                        </div>
+                    </a>
+                    <a class="weui_cell js_cell" href="javascript:;" data-id="ms_splash">
+                        <span class="weui_cell_hd"><img src="./images/icon_nav_article.png" class="icon_nav" alt=""></span>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p>Splash屏幕</p>
+                        </div>
+                        <div class="weui_cell_ft">
+                        </div>
+                    </a>
+                    <a class="weui_cell js_cell" href="javascript:;" data-id="ms_statusBar">
+                        <span class="weui_cell_hd"><img src="./images/icon_nav_icons.png" class="icon_nav" alt=""></span>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p>状态栏Toggle</p>
+                        </div>
+                        <div class="weui_cell_ft">
+                        </div>
+                    </a>
+                    <a class="weui_cell js_cell" href="javascript:;" data-id="ms_statusBarNotice">
+                        <span class="weui_cell_hd"><img src="./images/icon_nav_icons.png" class="icon_nav" alt=""></span>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p>通知栏消息</p>
+                        </div>
+                        <div class="weui_cell_ft">
+                        </div>
+                    </a>
+                    <a class="weui_cell js_cell" href="javascript:;" data-id="ms_barcodescanner">
+                        <span class="weui_cell_hd"><img src="./images/icon_nav_icons.png" class="icon_nav" alt=""></span>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p>扫码</p>
+                        </div>
+                        <div class="weui_cell_ft">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Cordova 引用，它在生成应用程序时添加到其中。 -->
+    <script src="cordova.js"></script>
+    <script src="scripts/zepto.js"></script>
+    <script src="scripts/handlebars/handlebars-v4.0.2.js"></script>
+    <script src="scripts/hammer/hammer.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+    <script src="scripts/partial/ms_battery.js"></script>
+    <script src="scripts/partial/ms_device.js"></script>
+    <script src="scripts/partial/ms_camera.js"></script>
+    <script src="scripts/partial/ms_capture.js"></script>
+    <script src="scripts/partial/ms_contacts.js"></script>
+    <script src="scripts/partial/ms_splash.js"></script>
+    <script src="scripts/partial/ms_statusBar.js"></script>
+    <script src="scripts/partial/ms_barcodescanner.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+</html>

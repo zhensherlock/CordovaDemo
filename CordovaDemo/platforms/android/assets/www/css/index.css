@@ -1,0 +1,22 @@
+﻿html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    height: 90%;
+}
+
+#contact_list li {
+}
+
+#contact_list img {
+    width: 20px;
+    margin-right: 5px;
+    display: block;
+}
