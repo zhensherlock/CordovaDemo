@@ -105,4 +105,5 @@
   <vs:plugin name="org.apache.cordova.geolocation" version="0.3.12" />
   <vs:plugin name="org.apache.cordova.statusbar" version="0.1.10" />
   <vs:plugin name="phonegap-plugin-barcodescanner" version="4.1.0" src="https://github.com/phonegap/phonegap-plugin-barcodescanner.git" />
+  <vs:plugin name="cordova-plugin-inappbrowser" version="1.1.2-dev" src="https://github.com/apache/cordova-plugin-inappbrowser.git" />
 </widget>

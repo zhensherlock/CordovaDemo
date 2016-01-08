@@ -184,6 +184,14 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+        "id": "cordova-plugin-inappbrowser.inappbrowser",
+        "clobbers": [
+            "cordova.InAppBrowser.open",
+            "window.open"
+        ]
+    },
+    {
         "file": "plugins/org.apache.cordova.file/www/DirectoryEntry.js",
         "id": "org.apache.cordova.file.DirectoryEntry",
         "clobbers": [
@@ -343,6 +351,7 @@ module.exports.metadata =
     "org.apache.cordova.geolocation": "0.3.12",
     "org.apache.cordova.statusbar": "0.1.10",
     "phonegap-plugin-barcodescanner": "4.1.0",
+    "cordova-plugin-inappbrowser": "1.1.2-dev",
     "org.apache.cordova.file": "1.3.3"
 }
 // BOTTOM OF METADATA

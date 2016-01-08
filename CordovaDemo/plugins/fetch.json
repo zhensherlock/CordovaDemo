@@ -86,5 +86,18 @@
             "url": "https://github.com/phonegap/phonegap-plugin-barcodescanner.git",
             "subdir": "."
         }
+    },
+    "org.apache.cordova.inappbrowser": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.inappbrowser"
+        }
+    },
+    "cordova-plugin-inappbrowser": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/apache/cordova-plugin-inappbrowser.git",
+            "subdir": "."
+        }
     }
 }
